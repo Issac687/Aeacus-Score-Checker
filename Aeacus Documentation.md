@@ -51,7 +51,7 @@
 
 **6. Move Additional Required Files:**
 
-- Copy ReadMe.conf from /opt/aeacus/misc/dev/ to /opt/Aeacus.
+- Copy `ReadMe.conf` from `/opt/aeacus/misc/dev/` to `/opt/aeacus`.
 
 **7. Run AEACUS Commands:**
 ```
@@ -62,7 +62,7 @@
 ```
 **8. Resolve TeamID.txt Issue:**
 
-- Locate the file in /misc/desktop/, copy the text, create a new nano file, paste contents, and save.
+- Locate the file in `/misc/desktop/`, copy the text, create a new nano file, paste contents, and save.
 
 **9. Verify Installation:**
 ```
@@ -130,7 +130,7 @@
 
 **2. Missing `TeamID.txt`**
 
-- Copy from `misc/desktop/` and ensure it is correctly saved.
+- Copy from `misc/desktop/` and paste it in the `/opt` or `aeacus` folder and ensure it is correctly saved in `.txt` format.
 
 **3. Missing `ReadMe.conf`**
 
@@ -138,9 +138,9 @@
 
 **4. `web.go` Requires Modification**
 
-- Install [Go](https://go.dev/dl/) (`go build` in AEACUS directory).
+- Install [Go](https://go.dev/dl/) (use the `go build` command in AEACUS directory to install updates and necessary files in the directory).
 
-- Edit `web.go`, `ReadMe.conf`, and `scoring.conf` using **Visual Studio 2022** for customization.
+- Edit `web.go`, `ReadMe.conf`, and `scoring.conf` using **Visual Studio 2022** for customization then once saved, use the `go build` command to ensure changes are made and saved later using the commands to update the **scoring report** and **readme** file.
 
 ## Screenshots (Windows OS)
 ```

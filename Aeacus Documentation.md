@@ -1,10 +1,11 @@
-# AEACUS SCORE CHECKER
+# AEACUS SCORE CHECKER DOCUMENTATION
+**Tested and Documented by: Is-haq Abdulhanif Khatri**
 
 *Automated Student Quiz Scoring Application*
 
 ## Overview
 
-AEACUS is an automated scoring application developed by a high school student. It allows students to submit quizzes assigned by teachers, and the application evaluates scores automatically.
+**AEACUS** is an automated scoring application developed by a high school student. It allows students to submit quizzes assigned by teachers, and the application evaluates scores automatically.
 
 ## Installation Guide
 
@@ -53,22 +54,26 @@ AEACUS is an automated scoring application developed by a high school student. I
 - Copy ReadMe.conf from /opt/aeacus/misc/dev/ to /opt/Aeacus.
 
 **7. Run AEACUS Commands:**
-
-`./aeacus --verbose score`
-
-`./aeacus --verbose readme`
-
+```
+./aeacus --verbose score
+```
+```
+./aeacus --verbose readme
+```
 **8. Resolve TeamID.txt Issue:**
 
 - Locate the file in /misc/desktop/, copy the text, create a new nano file, paste contents, and save.
 
 **9. Verify Installation:**
-
-`./aeacus --verbose check`
-
-`./aeacus --verbose score`
-
-`./aeacus --verbose readme`
+```
+./aeacus --verbose check
+```
+```
+./aeacus --verbose score
+```
+```
+./aeacus --verbose readme
+```
 
 **10. Generate Scoring Report:**
 
@@ -99,15 +104,18 @@ AEACUS is an automated scoring application developed by a high school student. I
 - Copy `ReadMe.conf` from `misc\dev\` and move it to the `Aeacus` folder.
 
 **6. Run AEACUS Commands in PowerShell:**
-
-`./aeacus --verbose check`
-
-`./aeacus --verbose score`
-
-`./aeacus --verbose readme`
-
-`./aeacus --verbose help`
-
+```
+./aeacus --verbose check
+```
+```
+./aeacus --verbose score
+```
+```
+./aeacus --verbose readme
+```
+```
+./aeacus --verbose help
+```
 **7. Generate Scoring Report:**
 
 `./aeacus --verbose release`
@@ -135,14 +143,14 @@ AEACUS is an automated scoring application developed by a high school student. I
 - Edit `web.go`, `ReadMe.conf`, and `scoring.conf` using **Visual Studio 2022** for customization.
 
 ## Screenshots (Windows OS)
+```
+./aeacus --verbose check
 
-`./aeacus --verbose check`
+./aeacus --verbose score
 
-`./aeacus --verbose score`
+./aeacus --verbose readme
 
-`./aeacus --verbose readme`
-
-`./aeacus --verbose help`
-
+./aeacus --verbose help
+```
 ----
 # *End of Document*

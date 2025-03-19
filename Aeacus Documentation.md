@@ -8,9 +8,9 @@ AEACUS is an automated scoring application developed by a high school student. I
 
 ## Installation Guide
 
-## Installing AEACUS on Linux Systems
+### Installing AEACUS on Linux Systems
 
-### Prerequisites
+#### Prerequisites
 
 - Ensure your system has root access.
 
@@ -18,124 +18,131 @@ AEACUS is an automated scoring application developed by a high school student. I
 
 ### Installation Steps
 
-1. Download AEACUS from the official repository: [Aeacus](https://github.com/elysium-suite/aeacus)
+**1.** **Download AEACUS** from the official repository: [Aeacus](https://github.com/elysium-suite/aeacus)
 
-2. Extract the Files:
+**2. Extract the Files**:
 
-- Download aeacus-linux.zip, source code (zip), and source code (tar.gz).
+- Download `aeacus-linux.zip`, `source code (zip)`, and `source code (tar.gz)`.
 
-3. Modify Folder Permissions:
+**3. Modify Folder Permissions:**
 
- `sudo chmod -R 777 /opt`
+`sudo chmod -R 777 /opt`
 
-Create a subfolder:
+- Create a subfolder:
 
-mkdir /opt/Aeacus
+`mkdir /opt/Aeacus`
 
-Copy and Extract Files:
+**4. Copy and Extract Files:**
 
-Move extracted files into /opt/Aeacus.
+- Move extracted files into `/opt/aeacus`.
 
-Create Configuration Files:
+**5. Create Configuration Files:**
 
-Navigate to the AEACUS folder:
+- Navigate to the AEACUS folder:
 
-cd /opt/Aeacus
+`cd /opt/aeacus`
 
-Create scoring.conf:
+- Create `scoring.conf`:
 
-sudo nano scoring.conf
+`sudo nano scoring.conf`
 
-Paste the template from the GitHub repository.
+- Paste the template from the [elysium-suite/aeacus](https://github.com/elysium-suite/aeacus) repository.
 
-Move Additional Required Files:
+**6. Move Additional Required Files:**
 
-Copy ReadMe.conf from /opt/aeacus/misc/dev/ to /opt/Aeacus.
+- Copy ReadMe.conf from /opt/aeacus/misc/dev/ to /opt/Aeacus.
 
-Run AEACUS Commands:
+**7. Run AEACUS Commands:**
 
-./aeacus --verbose score
-./aeacus --verbose readme
+`./aeacus --verbose score`
 
-Resolve TeamID.txt Issue:
+`./aeacus --verbose readme`
 
-Locate the file in /misc/desktop/, copy the text, create a new nano file, paste contents, and save.
+**8. Resolve TeamID.txt Issue:**
 
-Verify Installation:
+- Locate the file in /misc/desktop/, copy the text, create a new nano file, paste contents, and save.
 
-./aeacus --verbose check
-./aeacus --verbose score
-./aeacus --verbose readme
+**9. Verify Installation:**
 
-Generate Scoring Report:
+`./aeacus --verbose check`
 
-./aeacus --verbose release
+`./aeacus --verbose score`
 
-The results will be generated in .html format on the desktop.
+`./aeacus --verbose readme`
 
-Use Google Chrome to view the ScoringReport.html file.
+**10. Generate Scoring Report:**
 
-Installing AEACUS on Windows Systems
+`./aeacus --verbose release`
 
-Installation Steps
+- The results will be generated in .html format on the desktop.
 
-Download AEACUS from GitHub.
+- Use Google Chrome to view the ScoringReport.html file.
 
-Extract Files: Locate them in the Downloads folder.
+### Installing AEACUS on Windows Systems
 
-Run PowerShell Script: Extract .zip and .tar.gz files to C:\.
+*Installation Steps*
 
-Copy Files: Move extracted files to C:\Aeacus.
+**1.** **Download AEACUS** from the repository: [Aeacus](https://github.com/elysium-suite/aeacus)
 
-Create Configuration Files:
+**2. Extract Files:** Locate them in the Downloads folder.
 
-Open notepad, create scoring.conf, and paste the template.
+**3. Run PowerShell Script:** Extract .zip and .tar.gz files to C:\.
 
-Navigate to misc\desktop, copy TeamID.txt, and save it in Aeacus without .txt extension.
+**4. Copy Files:** Move extracted files to C:\Aeacus.
 
-Copy ReadMe.conf from misc\dev\ and move it to Aeacus.
+**5. Create Configuration Files:**
 
-Run AEACUS Commands in PowerShell:
+- Open `notepad`, create `scoring.conf`, and paste the template.
 
-./aeacus --verbose check
-./aeacus --verbose score
-./aeacus --verbose readme
-./aeacus --verbose help
+- Navigate to `misc\desktop`, copy `TeamID.txt`, and save it in `Aeacus` folder without `.txt` extension.
 
-Generate Scoring Report:
+- Copy `ReadMe.conf` from `misc\dev\` and move it to the `Aeacus` folder.
 
-./aeacus --verbose release
+**6. Run AEACUS Commands in PowerShell:**
 
-Open the .html file via a browser.
+`./aeacus --verbose check`
 
-Troubleshooting and Common Issues
+`./aeacus --verbose score`
 
-1. Missing scoring.conf
+`./aeacus --verbose readme`
 
-Ensure scoring.conf exists in the AEACUS folder with the correct format.
+`./aeacus --verbose help`
 
-2. Missing TeamID.txt
+**7. Generate Scoring Report:**
 
-Copy from misc/desktop/ and ensure it is correctly saved.
+`./aeacus --verbose release`
 
-3. Missing ReadMe.conf
+- Open the `.html` file via a browser.
 
-Copy from misc/dev/ and place it in the AEACUS folder.
+## Troubleshooting and Common Issues
 
-4. web.go Requires Modification
+**1. Missing scoring.conf**
 
-Install Go (go build in AEACUS directory).
+- Ensure `scoring.conf` exists in the AEACUS folder with the correct format.
 
-Edit web.go, ReadMe.conf, and scoring.conf using Visual Studio 2022 for customization.
+**2. Missing `TeamID.txt`**
 
-Screenshots (Windows OS)
+- Copy from `misc/desktop/` and ensure it is correctly saved.
 
-./aeacus --verbose check
+**3. Missing `ReadMe.conf`**
 
-./aeacus --verbose score
+- Copy from `misc/dev/` and place it in the AEACUS folder.
 
-./aeacus --verbose readme
+**4. `web.go` Requires Modification**
 
-./aeacus --verbose help
+- Install [Go](https://go.dev/dl/) (`go build` in AEACUS directory).
 
-End of Document
+- Edit `web.go`, `ReadMe.conf`, and `scoring.conf` using **Visual Studio 2022** for customization.
+
+## Screenshots (Windows OS)
+
+`./aeacus --verbose check`
+
+`./aeacus --verbose score`
+
+`./aeacus --verbose readme`
+
+`./aeacus --verbose help`
+
+----
+# *End of Document*

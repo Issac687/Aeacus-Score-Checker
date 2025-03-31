@@ -145,12 +145,23 @@
 ## Screenshots (Windows OS)
 ```
 ./aeacus --verbose check
+```
+![image](https://github.com/user-attachments/assets/8d4e3193-cbe3-4100-8995-dc369e78a1fb)
 
+```
 ./aeacus --verbose score
+```
+![image](https://github.com/user-attachments/assets/8bd45192-2934-4454-b1f0-7d9c80b71089)
 
+```
 ./aeacus --verbose readme
+```
+![image](https://github.com/user-attachments/assets/77932ab7-74c8-4079-a0ef-d98e8e6e6f78)
 
+```
 ./aeacus --verbose help
 ```
+![image](https://github.com/user-attachments/assets/f5c3d7c8-4674-414e-b56b-0cba76c64349)
+
 ----
 # *End of Document*
